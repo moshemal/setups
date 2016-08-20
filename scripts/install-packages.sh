@@ -1,3 +1,4 @@
+#!/bin/bash
 #libcurl3 for google-chrome
 #gir1.2-gtop-2.0 for Multi-Core System Monitor 1.5
 #dconf-cli for keyboard shortcuts
