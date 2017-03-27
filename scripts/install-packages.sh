@@ -25,7 +25,7 @@ sudo -i dpkg sublime-text_build-3114_amd64.deb
 
 
 echo "downloading Webstorm-2016.2"
-wget https://download-cf.jetbrains.com/webstorm/WebStorm-2016.2.tar.gz
+wget https://download-cf.jetbrains.com/webstorm/WebStorm-2017.1.tar.gz
 
 echo "installing Webstorm-2016.2 in /opt"
 sudo tar xfz WebStorm-*.tar.gz -C /opt
