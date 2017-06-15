@@ -24,16 +24,6 @@ wget https://download.sublimetext.com/sublime-text_build-3114_amd64.deb
 echo installinging sublimetext
 sudo -i dpkg sublime-text_build-3114_amd64.deb
 
-
-echo "downloading Webstorm-2016.2"
-wget https://download-cf.jetbrains.com/webstorm/WebStorm-2017.1.4.tar.gz
-
-echo "installing Webstorm-2016.2 in /opt"
-sudo tar xfz WebStorm-*.tar.gz -C /opt
-webstorm=`ls /opt/ | grep WebStorm`
-/opt/${webstorm}/bin/webstorm.sh
-
-
 ######################################################################
 #install npm 
 ######################################################################
@@ -60,3 +50,10 @@ echo 'export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"' >> ~/.bashrc
 source ~/.bashrc
 
 
+echo "downloading Webstorm-2016.2"
+wget https://download-cf.jetbrains.com/webstorm/WebStorm-2017.1.4.tar.gz
+
+echo "installing Webstorm-2016.2 in /opt"
+sudo tar xfz WebStorm-*.tar.gz -C /opt
+webstorm=`ls /opt/ | grep WebStorm`
+/opt/${webstorm}/bin/webstorm.sh
